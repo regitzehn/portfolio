@@ -20,7 +20,14 @@ img {
   background: #96c0e8;
 }
 
-.land {
+.web,
+.uxui,
+.animation {
   height: 100vh;
   background: #d0f9d3;
+}
+
+.indhold {
+  height: 100vh;
+  background: #7099df;
 }
