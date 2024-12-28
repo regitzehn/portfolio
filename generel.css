@@ -13,7 +13,8 @@ img {
 #univers {
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 101.8vh;
+  /* sat 1.8vh ekstra på height på denne section, så der ikke var luft at spotte med det blotte øje  */
   background: linear-gradient(#4b476e, #96c0e8);
 }
 
@@ -62,15 +63,17 @@ h2 {
   height: auto;
 }
 
+/* header */
+
 header {
   position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: -3.3rem;
+  /* jeg har givet header -rem i margin-top, så det hvide stykke går væk og jeg får det transparente look */
 }
 
 .logo img {
@@ -100,15 +103,12 @@ nav {
 
 .menu a {
   display: block;
-  padding: 10px;
+  padding: 4px;
   color: #333333;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
-}
-
-.menu a:hover {
-  color: #ff0000;
+  font-family: "Jost", serif;
 }
 
 .burger {
@@ -154,26 +154,20 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #ffffff;
     position: absolute;
-    top: 94px;
+    background-color: transparent;
+    top: 30px;
     left: 0;
     width: 100%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
   }
 
   nav.active .menu li {
-    margin: 10px 20px;
+    margin: 5px;
   }
 
   nav.active .menu a {
-    font-size: 24px;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .burger {
-    display: none;
+    font-size: 20px;
+    font-family: "Jost", serif;
   }
 }
