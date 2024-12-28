@@ -11,8 +11,18 @@ img {
 }
 
 .univers {
+  display: grid;
+  place-items: center;
   height: 100vh;
   background: linear-gradient(#4b476e, #96c0e8);
+}
+
+.moon {
+  max-width: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(231, 235, 192, 1);
 }
 
 .himmel {
@@ -30,4 +40,9 @@ img {
 .indhold {
   height: 100vh;
   background: #7099df;
+}
+
+/* fonte */
+h2 {
+  color: rgba(231, 235, 192, 1);
 }
