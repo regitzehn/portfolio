@@ -10,11 +10,21 @@ img {
   display: block;
 }
 
+body {
+  background: #4b476e;
+}
+
 #univers {
   display: grid;
   place-items: center;
-  height: 101.8vh;
-  /* sat 1.8vh ekstra på height på denne section, så der ikke var luft at spotte med det blotte øje  */
+  height: 100vh;
+  background: #4b476e;
+}
+
+#univers2 {
+  display: grid;
+  place-items: center;
+  height: 100vh;
   background: linear-gradient(#4b476e, #96c0e8);
 }
 
@@ -30,7 +40,7 @@ img {
 #hav {
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 101.8vh;
   background: #96c0e8;
 }
 
@@ -57,13 +67,7 @@ h2 {
   color: rgba(231, 235, 192, 1);
 }
 
-.portrait {
-  width: 300px;
-  border-radius: 50%;
-  height: auto;
-}
-
-/* header */
+/* header og menu */
 
 header {
   position: sticky;
@@ -71,30 +75,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  margin-top: -3.3rem;
-  /* jeg har givet header -rem i margin-top, så det hvide stykke går væk og jeg får det transparente look */
-}
-
-.logo img {
-  width: 50px;
-  height: 50px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
+  font-family: "Jost", serif;
 }
 
 .menu {
   display: flex;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .menu li {
   margin-right: 20px;
+  list-style-type: none;
 }
 
 .menu li:last-child {
@@ -103,26 +95,26 @@ nav {
 
 .menu a {
   display: block;
-  padding: 4px;
+  padding: 10px;
   color: #333333;
   text-decoration: none;
   transition: color 0.3s;
-  text-align: end;
-  font-family: "Jost", serif;
+}
+
+.menu a:hover {
+  color: white;
 }
 
 .burger {
-  width: 30px;
-  height: 20px;
   cursor: pointer;
 }
 
-.burger .line {
-  width: 100%;
-  height: 2px;
+.burger .dot {
   background-color: #333333;
-  margin-bottom: 5px;
-  transition: 0.2s linear;
+  margin-top: 1.5px;
+  transition: 0.4s linear;
+  border: 10px solid #333333;
+  border-radius: 50%;
 }
 
 .burger {
@@ -135,39 +127,33 @@ nav {
   }
   .burger {
     display: block;
+    margin: 10px;
   }
 
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
+  /* jeg har givet dem en transform translat - de rykker sig ift til deres og pladcering */
+
+  .burger.active .dot:nth-child(1) {
+    transform: translate(5px, -5px);
   }
 
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
-    transition: 0.15s linear;
-  }
-
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
+  .burger.active .dot:nth-child(3) {
+    transform: translate(-5px, 5px);
   }
 
   nav.active .menu {
     display: block;
     position: absolute;
-    background-color: transparent;
-    top: 30px;
+    top: 94px;
     left: 0;
     width: 100%;
     z-index: 1;
   }
 
-  nav.active .menu li {
-    margin: 5px;
-  }
-
   nav.active .menu a {
     font-size: 20px;
-    font-family: "Jost", serif;
+  }
+
+  nav.active .menu a:hover {
+    color: white;
   }
 }

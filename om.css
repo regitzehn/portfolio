@@ -1,0 +1,9 @@
+.portrait {
+  width: 300px;
+  border-radius: 50%;
+  height: auto;
+}
+
+body {
+  background: #96c0e8;
+}
