@@ -17,7 +17,7 @@ body {
 #univers {
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 90vh;
   background: #4b476e;
 }
 
@@ -33,6 +33,16 @@ body {
   max-width: 100px;
   width: 100px;
   height: 100px;
+  border-radius: 50%;
+  background-color: rgba(231, 235, 192, 1);
+}
+
+.moon2 {
+  display: grid;
+  max-width: 100px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 70px;
   border-radius: 50%;
   background-color: rgba(231, 235, 192, 1);
 }
@@ -130,7 +140,7 @@ header {
     margin: 10px;
   }
 
-  /* jeg har givet dem en transform translat - de rykker sig ift til deres og pladcering */
+  /* jeg har givet dem en transform translate - 5px, -5px er 5px til højre på x-aksen, 5px er op ad y-aksen */
 
   .burger.active .dot:nth-child(1) {
     transform: translate(5px, -5px);
