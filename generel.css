@@ -14,59 +14,25 @@ body {
   background: #4b476e;
 }
 
-#univers {
-  display: grid;
-  place-items: center;
-  height: 90vh;
-  background: #4b476e;
+footer {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  min-height: 100px;
+  background-color: #333333;
 }
 
-#univers2 {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  background: linear-gradient(#4b476e, #96c0e8);
+/* tekst */
+
+a {
+  text-decoration: none;
+  color: rgba(231, 235, 192, 1);
+  font-weight: 1000;
+  font-family: "Madimi One", serif;
 }
 
-.moon {
-  display: grid;
-  max-width: 100px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: rgba(231, 235, 192, 1);
-}
-
-.moon2 {
-  display: grid;
-  max-width: 100px;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 70px;
-  border-radius: 50%;
-  background-color: rgba(231, 235, 192, 1);
-}
-
-#hav {
-  display: grid;
-  place-items: center;
-  height: 101.8vh;
-  background: #96c0e8;
-}
-
-#web,
-#uxui,
-#animation {
-  height: 100vh;
-  background: #d0f9d3;
-}
-
-#indhold {
-  height: 100vh;
-  background: #7099df;
-}
-
-/* fonte */
 h1 {
   color: rgba(231, 235, 192, 1);
   font-family: "Madimi One", serif;
@@ -74,6 +40,11 @@ h1 {
 }
 h2 {
   font-family: "Jost", serif;
+  color: rgba(231, 235, 192, 1);
+}
+
+footer p {
+  font-family: "Madimi One", serif;
   color: rgba(231, 235, 192, 1);
 }
 
@@ -121,9 +92,9 @@ header {
 
 .burger .dot {
   background-color: #333333;
-  margin-top: 1.5px;
+  margin-top: 1px;
   transition: 0.4s linear;
-  border: 10px solid #333333;
+  border: 7px solid #333333;
   border-radius: 50%;
 }
 
@@ -131,29 +102,55 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .menu {
     display: none;
   }
   .burger {
     display: block;
-    margin: 10px;
+    margin: 20px;
   }
 
   /* jeg har givet dem en transform translate - 5px, -5px er 5px til højre på x-aksen, 5px er op ad y-aksen */
 
   .burger.active .dot:nth-child(1) {
     transform: translate(5px, -5px);
+    animation: glowDot;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  .burger.active .dot:nth-child(2) {
+    animation: glowDot;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 
   .burger.active .dot:nth-child(3) {
     transform: translate(-5px, 5px);
+    animation: glowDot;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes glowDot {
+    0% {
+    }
+    100% {
+      filter: drop-shadow(0 0 4px rgb(231, 235, 192, 1));
+    }
   }
 
   nav.active .menu {
     display: block;
     position: absolute;
-    top: 94px;
+    top: 80px;
     left: 0;
     width: 100%;
     z-index: 1;

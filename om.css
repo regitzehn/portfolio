@@ -1,9 +1,47 @@
-.portrait {
-  width: 300px;
-  border-radius: 50%;
-  height: auto;
+#om_body {
+  background: #96c0e8;
 }
 
-body {
+#hav {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
   background: #96c0e8;
+}
+
+.portrait {
+  display: grid;
+  width: 280px;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.cv {
+  display: grid;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 10%;
+  padding: 20px;
+  margin: 30px;
+}
+
+/* tekst */
+
+h3 {
+  font-family: "Jost", serif;
+  color: rgba(231, 235, 192, 1);
+}
+
+p {
+  font-family: "Jost", serif;
+  color: rgba(231, 235, 192, 1);
+}
+
+/* media query */
+
+@media (min-width: 800px) {
+  #hav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+  }
 }
