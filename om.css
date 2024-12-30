@@ -1,27 +1,41 @@
-#om_body {
-  background: #96c0e8;
-}
-
 #hav {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  background: #96c0e8;
+}
+
+#om_hav {
+  background-color: linear-gradient(#4b476e, #96c0e8);
+  background-image: url(img/3moons.svg);
+  background-repeat: no-repeat;
 }
 
 .portrait {
   display: grid;
-  width: 280px;
-  border-radius: 50%;
-  padding: 30px;
+  width: 250px;
+  border-radius: 20%;
 }
 
 .cv {
   display: grid;
-  border: 4px solid rgb(255, 255, 255);
-  border-radius: 10%;
   padding: 20px;
-  margin: 30px;
+  margin-top: 20px;
+  margin: 10px;
+}
+
+.uddannelse {
+  padding: 15px;
+  margin: 10px;
+}
+
+.arbejde {
+  padding: 15px;
+  margin: 10px;
+}
+
+.volunteer {
+  padding: 15px;
+  margin: 10px;
 }
 
 /* tekst */
@@ -34,6 +48,8 @@ h3 {
 p {
   font-family: "Jost", serif;
   color: rgba(231, 235, 192, 1);
+  line-height: 30px;
+  font-size: 16px;
 }
 
 /* media query */
@@ -41,7 +57,18 @@ p {
 @media (min-width: 800px) {
   #hav {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     min-height: 100vh;
+    margin-left: 280px;
+  }
+
+  .uddannelse,
+  .volunteer {
+    padding: 0;
+    margin: 0;
+  }
+
+  .arbejde {
+    margin-left: 40px;
   }
 }
