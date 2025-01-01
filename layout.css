@@ -19,6 +19,9 @@
   height: 100px;
   border-radius: 50%;
   background-color: rgba(231, 235, 192, 1);
+}
+
+.moon:hover {
   box-shadow: #9da4ab 0px 0px 30px 10px;
 }
 
