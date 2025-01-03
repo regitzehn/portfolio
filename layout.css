@@ -36,14 +36,22 @@
   box-shadow: #9da4ab 0px 0px 30px 10px;
 }
 
-#web,
-#uxui,
-#animation {
+#web {
   height: 100vh;
   background: #d0f9d3;
 }
 
+#uxui {
+  height: 100vh;
+  background: #88a88a;
+}
+
+#animation {
+  height: 100vh;
+  background: #95afd2;
+}
+
 #indhold {
   height: 100vh;
-  background: #7099df;
+  background: #685653;
 }
