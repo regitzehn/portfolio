@@ -13,7 +13,6 @@
 }
 
 .moon {
-  display: grid;
   max-width: 100px;
   width: 100px;
   height: 100px;
@@ -23,22 +22,30 @@
 
 .moon:hover {
   box-shadow: #9da4ab 0px 0px 30px 10px;
+  transition: 0.4s ease;
 }
 
 .moon2 {
-  display: grid;
   max-width: 100px;
   width: 100px;
   height: 100px;
-  margin-bottom: 70px;
   border-radius: 50%;
+  margin-top: 210px;
   background-color: rgba(231, 235, 192, 1);
   box-shadow: #9da4ab 0px 0px 30px 10px;
 }
 
+#web,
+#uxui,
+#animation,
+#indhold {
+  display: grid;
+  place-items: center;
+}
+
 #web {
   height: 100vh;
-  background: #d0f9d3;
+  background: #9db09f;
 }
 
 #uxui {
