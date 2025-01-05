@@ -45,9 +45,17 @@ h1 {
   font-family: "Madimi One", serif;
   font-size: 30px;
 }
-h2 {
+h2,
+h3 {
   font-family: "Jost", serif;
   color: rgba(231, 235, 192, 1);
+}
+
+h2 {
+  margin-top: 8px;
+}
+h3 {
+  font-size: 16px;
 }
 
 footer p {
@@ -55,12 +63,8 @@ footer p {
   color: rgba(231, 235, 192, 1);
 }
 
-.knap-start,
-.knap-web,
-.knap-uxui,
-.knap-ani {
+.knap {
   width: 30px;
-  margin-bottom: 90px;
   background-color: var(--blue);
   color: white;
   font-size: 16px;
@@ -181,6 +185,6 @@ header {
   }
 
   nav.active .menu a:hover {
-    color: rgba(231, 235, 192, 1);
+    color: #e7ebc0;
   }
 }
