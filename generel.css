@@ -74,11 +74,13 @@ footer p {
 
 /* header og menu */
 
+/* flex-end for at sætte det til højre side af skærmen  */
+
 header {
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   font-family: "Jost", serif;
 }
@@ -87,6 +89,8 @@ header {
   display: flex;
   margin: 0;
   padding: 0;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .menu li {
@@ -99,7 +103,7 @@ header {
 }
 
 .menu a {
-  display: block;
+  display: flex;
   padding: 10px;
   color: #333333;
   text-decoration: none;
@@ -173,15 +177,17 @@ header {
 
   nav.active .menu {
     display: block;
-    position: absolute;
-    top: 80px;
-    left: 0;
+    position: fixed;
+    top: 120px;
     width: 100%;
     z-index: 1;
+    margin: -50px;
+    text-align: right;
   }
 
   nav.active .menu a {
     font-size: 20px;
+    padding: 10px 16px;
   }
 
   nav.active .menu a:hover {
