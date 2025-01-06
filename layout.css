@@ -8,16 +8,11 @@
 #univers2 {
   display: grid;
   place-items: center;
-  padding-bottom: 225px;
   background: linear-gradient(#4b476e, #96c0e8);
 }
 
 #univers2 h3 {
   margin-bottom: 100px;
-}
-
-.saturn2 {
-  width: 200px;
 }
 
 .moon {
@@ -28,15 +23,6 @@
   margin: 60px;
   background-color: rgba(231, 235, 192, 1);
   z-index: 1;
-}
-
-/* pointer-events: none; gør at cta-knappen + hover virker selvom linjen ligger ovenover */
-
-.pege {
-  width: 100px;
-  margin: 10px;
-  z-index: 2;
-  pointer-events: none;
 }
 
 .moon:hover {
@@ -52,24 +38,45 @@
   place-items: center;
 }
 
+#knap1 {
+  margin-bottom: 70px;
+}
+
 #web {
-  height: 100vh;
-  background: #9db09f;
+  height: auto;
+  padding: 30px;
+  background: #96c0e8;
+}
+
+#web h1 {
+  margin-top: 65px;
+  margin-bottom: 25px;
+}
+
+#web p {
+  text-align: left;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
 }
 
 #uxui {
-  height: 100vh;
+  height: auto;
   background: #88a88a;
 }
 
 #animation {
-  height: 100vh;
+  height: auto;
   background: #95afd2;
 }
 
 #indhold {
-  height: 100vh;
-  background: #685653;
+  height: auto;
+  background: #333;
 }
 
 @media (min-width: 800px) {
@@ -79,8 +86,7 @@
     max-width: 150px;
   }
 
-  .moontext {
-    width: 300px;
-    margin-top: -300px;
+  .flex_col {
+    flex-direction: row;
   }
 }

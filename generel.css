@@ -31,6 +31,25 @@ footer {
   font-family: "Madimi One", serif;
 }
 
+/* pilen */
+
+.knap {
+  width: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.solution {
+  background-color: rgb(121, 102, 137);
+  border-radius: 8%;
+  padding: 10px;
+}
+
+.solution:hover {
+  scale: 0.9;
+}
+
 /* tekst */
 
 a {
@@ -54,8 +73,14 @@ h3 {
 h2 {
   margin-top: 8px;
 }
+
 h3 {
   font-size: 16px;
+}
+
+p {
+  font-family: "Jost", serif;
+  color: rgba(231, 235, 192, 1);
 }
 
 footer p {
@@ -63,17 +88,12 @@ footer p {
   color: rgba(231, 235, 192, 1);
 }
 
-.knap {
-  width: 30px;
-  background-color: var(--blue);
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+#web p {
+  max-width: 60ch;
+  text-align: center;
 }
 
 /* header og menu */
-
 /* flex-end for at sætte det til højre side af skærmen  */
 
 header {

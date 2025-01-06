@@ -5,7 +5,7 @@
 
 .billede {
   margin: auto;
-  width: 80%;
+  max-width: 280px;
 }
 
 .timeline {
