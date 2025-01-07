@@ -51,7 +51,7 @@ h1 {
 
 /* centreret tekst for div'er med id'et center */
 
-#center {
+.center {
   text-align: center;
 }
 
@@ -246,7 +246,7 @@ h1 {
     margin: auto;
   }
 
-  .css1 {
+  #css1 {
     margin-top: 60px;
   }
 
