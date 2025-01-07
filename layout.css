@@ -46,7 +46,7 @@
 }
 
 h1 {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 /* centreret tekst for div'er med id'et center */
@@ -70,7 +70,7 @@ h1 {
 }
 
 #web h1 {
-  margin-top: 65px;
+  margin-top: 110px;
   margin-bottom: 40px;
 }
 
@@ -188,7 +188,7 @@ h1 {
 }
 
 #indhold h2 {
-  margin: 20px;
+  margin-top: 60px;
 }
 
 #indhold p {
@@ -200,15 +200,8 @@ h1 {
   margin: 20px auto 20px auto;
 }
 
-.hos_viola {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 20px;
-}
-
-#blaatime {
-  margin-top: 70px;
+#viola {
+  margin-bottom: -10px;
 }
 
 .grid_1-1-1 {
@@ -304,12 +297,13 @@ h1 {
 
   .ide {
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 100px;
   }
 
   .ide p {
     order: 2;
     margin-top: 24px;
+    text-align: right;
   }
 
   .valg {
@@ -320,6 +314,7 @@ h1 {
   .paper {
     grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
+    gap: 150px;
   }
 
   .spilelementer {
@@ -331,10 +326,6 @@ h1 {
   }
 
   /* indhold */
-
-  .hos_viola {
-    flex-direction: row;
-  }
 
   .grid_1-1-1 {
     grid-template-columns: repeat(3, 1fr);
@@ -356,5 +347,10 @@ h1 {
 
   .frontp {
     grid-column: span 2;
+  }
+
+  #indhold p {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
