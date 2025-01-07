@@ -18,17 +18,20 @@ body {
   scroll-behavior: smooth;
 }
 
+.max {
+  max-width: 900px;
+}
+
 /* margin-top: auto; sørger for at footer bliver i bunden */
 
 footer {
   margin-top: auto;
   display: flex;
   justify-content: center;
-  gap: 30px;
   align-items: center;
+  gap: 30px;
   background-color: #333333;
   padding: 20px;
-  font-family: "Madimi One", serif;
 }
 
 /* pilen */
@@ -41,51 +44,57 @@ footer {
 }
 
 .solution {
-  background-color: rgb(121, 102, 137);
+  background-color: rgba(231, 235, 192, 0.927);
+  color: #333333;
   border-radius: 8%;
   padding: 10px;
 }
 
 .solution:hover {
   scale: 0.9;
+  background-color: #333333;
+  color: #e7ebc0;
+  transition: 0.5s ease;
 }
 
 /* tekst */
 
 a {
   text-decoration: none;
-  color: rgba(231, 235, 192, 1);
   font-weight: 1000;
   font-family: "Madimi One", serif;
 }
 
+h1,
+h2,
+h3,
+p,
+a {
+  color: #e7ebc0;
+}
+
 h1 {
-  color: rgba(231, 235, 192, 1);
   font-family: "Madimi One", serif;
   font-size: 30px;
+  text-align: center;
 }
+
 h2,
-h3 {
+h3,
+p {
   font-family: "Jost", serif;
-  color: rgba(231, 235, 192, 1);
 }
 
 h2 {
-  margin-top: 8px;
+  text-align: center;
 }
 
 h3 {
   font-size: 16px;
 }
 
-p {
-  font-family: "Jost", serif;
-  color: rgba(231, 235, 192, 1);
-}
-
 footer p {
   font-family: "Madimi One", serif;
-  color: rgba(231, 235, 192, 1);
 }
 
 #web p {
