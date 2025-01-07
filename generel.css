@@ -19,7 +19,7 @@ body {
 }
 
 .max {
-  max-width: 900px;
+  max-width: 950px;
 }
 
 /* margin-top: auto; sørger for at footer bliver i bunden */
@@ -34,7 +34,7 @@ footer {
   padding: 20px;
 }
 
-/* pilen */
+/* pil ned */
 
 .knap {
   width: 30px;
@@ -43,11 +43,14 @@ footer {
   cursor: pointer;
 }
 
+/* border til link-løsninger */
+
 .solution {
   background-color: rgba(231, 235, 192, 0.927);
   color: #333333;
   border-radius: 8%;
   padding: 10px;
+  margin: 40px;
 }
 
 .solution:hover {
@@ -93,13 +96,12 @@ h3 {
   font-size: 16px;
 }
 
-footer p {
-  font-family: "Madimi One", serif;
+p {
+  font-size: 18px;
 }
 
-#web p {
-  max-width: 60ch;
-  text-align: center;
+footer p {
+  font-family: "Madimi One", serif;
 }
 
 /* header og menu */
@@ -112,6 +114,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   font-family: "Jost", serif;
+  margin: 5px;
 }
 
 .menu {
@@ -128,7 +131,7 @@ header {
 }
 
 .menu li:last-child {
-  margin-right: 0;
+  margin-right: 20px;
 }
 
 .menu a {
@@ -142,6 +145,8 @@ header {
 .menu a:hover {
   color: rgba(231, 235, 192, 1);
 }
+
+/* burger */
 
 .burger {
   cursor: pointer;
