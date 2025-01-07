@@ -46,7 +46,13 @@
 }
 
 h1 {
-  margin-top: 50px;
+  margin-top: 20px;
+}
+
+/* centreret tekst for div'er med id'et center */
+
+#center {
+  text-align: center;
 }
 
 /* knap */
@@ -59,17 +65,16 @@ h1 {
 
 #web {
   height: auto;
-  padding: 30px;
   background: #96c0e8;
+  padding: 30px;
 }
 
 #web h1 {
   margin-top: 65px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 #web p {
-  text-align: center;
   margin-bottom: 25px;
 }
 
@@ -81,6 +86,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  margin-bottom: 40px;
 }
 
 /* grundlæggende ux/ui */
@@ -88,13 +94,24 @@ h1 {
 #uxui {
   height: auto;
   background: #88a88a;
+  padding: 35px;
+}
+
+#uxui h1 {
+  margin-bottom: 40px;
+}
+
+#uxui p {
+  margin-bottom: 30px;
 }
 
 .grid_1-1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  padding: 60px;
+  padding: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .img1 {
@@ -117,11 +134,49 @@ h1 {
 
 #animation {
   height: auto;
-  background: #95afd2;
+  background: #859fc2;
+  padding: 30px;
+}
+
+#animation h1 {
+  margin-bottom: 40px;
+}
+
+#animation h2 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.ide,
+.paper {
+  display: grid;
+  padding: 20px;
+}
+
+.ide img,
+.valg img {
+  margin-top: 35px;
+}
+
+.ide {
+  gap: 50px;
+}
+
+.valg {
+  padding: 20px;
+}
+
+.paper {
+  gap: 50px;
 }
 
 .spilelementer {
-  padding: 40px;
+  padding: 20px;
+}
+
+.screens {
+  display: grid;
+  gap: 20px;
 }
 
 /* grundlæggende indhold */
@@ -129,10 +184,20 @@ h1 {
 #indhold {
   height: auto;
   background: #464141;
+  padding: 30px;
+}
+
+#indhold h2 {
+  margin: 20px;
 }
 
 #indhold p {
-  margin-top: 35px;
+  margin: 40px;
+}
+
+.clapboard {
+  max-width: 280px;
+  margin: 20px auto 20px auto;
 }
 
 .hos_viola {
@@ -143,27 +208,29 @@ h1 {
 }
 
 #blaatime {
-  margin-top: 110px;
+  margin-top: 70px;
 }
 
 .grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  padding: 40px;
 }
 
 .style {
-  padding: 45px;
+  padding: 25px;
 }
 
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  padding: 50px;
+  padding: 40px 40px 0px 40px;
 }
 
 @media (min-width: 800px) {
+  /* tekst */
   h1 {
     font-size: 40px;
   }
@@ -176,22 +243,27 @@ h1 {
     font-size: 20px;
   }
 
-  p {
-    font-size: 20px;
-  }
+  /* måne div */
 
   .moon {
     width: 150px;
     height: 150px;
   }
 
+  /* web */
+
   .wireframe {
     max-width: 700px;
     margin: auto;
   }
 
+  .css1 {
+    margin-top: 60px;
+  }
+
   .grid {
     grid-template-columns: 1fr 1fr;
+    margin: 50px 25px 25px 25px;
   }
 
   .min-mac {
@@ -199,9 +271,12 @@ h1 {
     margin: auto;
   }
 
+  /* uxui */
+
   .grid_1-1-1-1 {
     grid-template-columns: 1fr 1fr 2fr;
     gap: 40px;
+    margin: 50px 0px 50px 0px;
   }
 
   .img1 {
@@ -225,6 +300,38 @@ h1 {
     height: 100%;
   }
 
+  /* animation */
+
+  .ide {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .ide p {
+    order: 2;
+    margin-top: 24px;
+  }
+
+  .valg {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .paper {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+  }
+
+  .spilelementer {
+    margin-bottom: 50px;
+  }
+
+  .screens {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* indhold */
+
   .hos_viola {
     flex-direction: row;
   }
@@ -236,6 +343,11 @@ h1 {
 
   .originalside {
     grid-column: 1 / span 3;
+  }
+
+  .style {
+    max-width: 800px;
+    margin: auto;
   }
 
   .grid_1-1 {
