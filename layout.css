@@ -153,21 +153,17 @@ h1 {
   padding: 20px;
 }
 
-.ide img,
-.valg img {
-  margin-top: 35px;
-}
-
 .ide {
-  gap: 50px;
+  gap: 30px;
 }
 
-.valg {
+.valg img {
+  margin-top: 5px;
   padding: 20px;
 }
 
 .paper {
-  gap: 50px;
+  gap: 40px;
 }
 
 .spilelementer {
@@ -302,13 +298,12 @@ h1 {
 
   .ide p {
     order: 2;
-    margin-top: 24px;
     text-align: right;
   }
 
   .valg {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 60px;
   }
 
   .paper {
